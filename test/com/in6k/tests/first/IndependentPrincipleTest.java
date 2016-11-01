@@ -8,17 +8,17 @@ import org.junit.Test;
 
 public class IndependentPrincipleTest {
 
-    public static int result = 0;
-
-    @Test
+    @org.junit.Test
     public void test2() throws Exception {
+        int result = 0;
         result += 4;
         assertEquals(4, result);
     }
 
-    @Test
+    @org.junit.Test
     @Ignore
     public void test1() throws Exception {
+        int result = 0;
         result += 2;
         assertEquals(2, result);
     }
